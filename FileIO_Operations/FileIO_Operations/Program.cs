@@ -10,6 +10,7 @@
             obj.FileExists();
             obj.ReadAllLines();
             obj.ReadAllText();
+            obj.CopyPath();
         }
     }
 }

@@ -39,7 +39,18 @@ namespace FileIO_Operations
             string text;
             text = File.ReadAllText(filePath);
             Console.WriteLine(text);
-            Console.ReadLine();
+        }
+
+        public void CopyPath()
+        {
+            Console.WriteLine("\n**********Copy File Path**********");
+            string filePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile1.txt";
+            string copyFilePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile2.txt";
+            File.Copy(filePath, copyFilePath);
+            Console.WriteLine("\nCopied Successfully");
+            string copiedText;
+            copiedText = File.ReadAllText(copyFilePath);
+            Console.WriteLine(copiedText);
         }
     }
 }
