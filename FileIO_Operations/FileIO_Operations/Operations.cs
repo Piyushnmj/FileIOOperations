@@ -10,6 +10,7 @@ namespace FileIO_Operations
     {
         public void FileExists()
         {
+            Console.WriteLine("\n**********File Exists Operation**********");
             string filePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile1.txt";
             if (File.Exists(filePath))
             {
@@ -19,8 +20,17 @@ namespace FileIO_Operations
             {
                 Console.WriteLine("\nFile Not Found");
             }
-            Console.ReadLine();
         }
 
+        public void ReadAllLines()
+        {
+            Console.WriteLine("\n**********Read All Lines**********\n");
+            string filePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile1.txt";
+            string[] lines;
+            lines = File.ReadAllLines(filePath);
+            Console.WriteLine(lines[0]);
+            Console.WriteLine(lines[1]);
+            Console.ReadLine();
+        }
     }
 }
