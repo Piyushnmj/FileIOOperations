@@ -52,5 +52,13 @@ namespace FileIO_Operations
             copiedText = File.ReadAllText(copyFilePath);
             Console.WriteLine(copiedText);
         }
+
+        public void DeletePath()
+        {
+            Console.WriteLine("\n**********Delete File Path**********");
+            string copyFilePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile2.txt";
+            File.Delete(copyFilePath);
+            Console.WriteLine("\nDeleted Successfully");
+        }
     }
 }
