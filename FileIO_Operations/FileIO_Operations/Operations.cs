@@ -30,6 +30,15 @@ namespace FileIO_Operations
             lines = File.ReadAllLines(filePath);
             Console.WriteLine(lines[0]);
             Console.WriteLine(lines[1]);
+        }
+
+        public void ReadAllText()
+        {
+            Console.WriteLine("\n**********Read All Text**********\n");
+            string filePath = @"F:\Bridgelabz Codin\FileIOOperations\FileIO_Operations\FileIO_Operations\WordFile1.txt";
+            string text;
+            text = File.ReadAllText(filePath);
+            Console.WriteLine(text);
             Console.ReadLine();
         }
     }
