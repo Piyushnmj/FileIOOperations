@@ -12,6 +12,8 @@
             obj.ReadAllText();
             obj.CopyPath();
             obj.DeletePath();
+            StreamReaderWriterClass objStream = new StreamReaderWriterClass();
+            objStream.StreamWriterOperation();
         }
     }
 }
