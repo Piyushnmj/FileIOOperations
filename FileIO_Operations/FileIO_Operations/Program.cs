@@ -1,10 +1,13 @@
 ﻿namespace FileIO_Operations
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to File Input-Output Operations Program");
+            Console.WriteLine("Welcome to File Input-Output Operation");
+
+            Operations obj = new Operations();
+            obj.FileExists();
         }
     }
 }
